@@ -15,5 +15,5 @@ total<-as.data.frame(tapply(motor$Emissions, motor$year, sum))
 
 # Plot it
 png(filename="plot5.png")
-ggplot()+geom_line(aes(x=unique(motor$year), y=total))+labs(title="Emissions from motor vehicle sources", subtitle="1999-2008",x="Year", y="Total emissions (tons)")
+ggplot()+geom_line(aes(x=unique(motor$year), y=total))+labs(title="Emissions from motor vehicle sources in Baltimore City", subtitle="1999-2008",x="Year", y="Total emissions (tons)")
 dev.off()
